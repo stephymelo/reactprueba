@@ -1,0 +1,70 @@
+body{
+    background-color: black;
+    color:white;
+}
+
+.app{
+    
+}
+
+.logo{
+    padding-top:5px;
+    height:30px;
+    width:30px;
+    left:-500px;
+    position: relative;
+}
+.profile{
+    padding-top:5px;
+    height:30px;
+    width:30px;
+    left:500px;
+    position: relative;
+
+}
+
+
+.nav{
+   
+    margin-top:10px;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.favoritesArticle{
+    margin-left:50px;
+    
+
+}
+.favoritesSection{
+    display: flex;
+    margin-left:50px;
+    position: relative;
+}
+
+.similarArticle{
+    margin-left:50px;
+}
+
+.similarSection{
+    display: flex;
+    margin-left:50px;
+    position: relative;
+}
+
+.button{
+    width:50px;
+    top:70px;
+    right:70px;
+    position:absolute;
+}
+
+.button2{
+    width:50px;
+    top:70px;
+    right:70px;
+    position:absolute;
+
+}
+
