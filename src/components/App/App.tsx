@@ -13,6 +13,20 @@ import eraser from '../../recursos/eraserAlbum.jpg';
 import artic from '../../recursos/articmonkeys.jpeg';
 import avenged from '../../recursos/avenged.jpg';
 
+import ProfileElem, { ProfileProps } from '../Profile/Profile';
+
+type MusicElemObj = ProfileProps& {
+  id: number;
+}
+
+const musicElems: MusicElemObj[] = [
+  {
+    id: Math.random(),
+    title: 'Stephanie',
+  },
+
+];
+
 
 
 function App() {
@@ -33,7 +47,15 @@ function App() {
         <Link
           text="Search"
         ></Link>
-        <img className="profile" src={profile} alt="profile" />
+
+
+       
+
+        <div className="profile">
+        {musicElems.map((elem) => {
+        return <ProfileElem key={elem.id} title={elem.title} />;
+      })}
+        </div>
       </nav>
 
       <article className="favoritesArticle">
