@@ -15,11 +15,11 @@ import avenged from '../../recursos/avenged.jpg';
 
 import ProfileElem, { ProfileProps } from '../Profile/Profile';
 
-type MusicElemObj = ProfileProps& {
+type profileObj = ProfileProps& {
   id: number;
 }
 
-const musicElems: MusicElemObj[] = [
+const profileElems: profileObj[] = [
   {
     id: Math.random(),
     title: 'Stephanie',
@@ -52,7 +52,7 @@ function App() {
        
 
         <div className="profile">
-        {musicElems.map((elem) => {
+        {profileElems.map((elem) => {
         return <ProfileElem key={elem.id} title={elem.title} />;
       })}
         </div>
